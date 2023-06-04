@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('talks', function (Blueprint $table) {
             $table->id();
+            $table->integer('customer_id');
+            $table->string('content');
             $table->timestamps();
         });
     }
