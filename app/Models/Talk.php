@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Talk extends Model
 {
     use HasFactory;
+        
+    public function invoices() {
+    return $this-belongsTo(Customer::class);
+    }
 }
